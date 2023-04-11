@@ -3,13 +3,20 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ShinGo.otf">
+            <string>ShinGoPro-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FishViewController" customModule="acwiki" customModuleProvider="target">
             <connections>
+                <outlet property="errorLabel" destination="Iry-X1-7oq" id="lhp-2O-rAu"/>
                 <outlet property="tableView" destination="fcy-ff-G5B" id="eeB-AI-8d5"/>
                 <outlet property="view" destination="iN0-l3-epB" id="2WR-Vs-n2L"/>
             </connections>
@@ -23,6 +30,13 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There was an error loading the data :(" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iry-X1-7oq">
+                    <rect key="frame" x="16" y="418" width="366" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="17"/>
+                    <color key="textColor" name="ColorMintDark"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,6 +50,9 @@
         </view>
     </objects>
     <resources>
+        <namedColor name="ColorMintDark">
+            <color red="0.41299998760223389" green="0.69199997186660767" blue="0.69900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

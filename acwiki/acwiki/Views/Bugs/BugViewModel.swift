@@ -11,6 +11,7 @@ import Combine
 
 class BugViewModel: ObservableObject {
     @Published var bugs: [Bug] = []
+    @Published var error:String = ""
     var cancellables = Set<AnyCancellable>()
     init(){
         getBugs()
@@ -30,7 +31,12 @@ class BugViewModel: ObservableObject {
             }
             .decode(type: [String:Bug].self, decoder: JSONDecoder())
             .sink { (completion) in
-                print(completion)
+                switch completion {
+                case.failure:
+                    self.error = "There was an error loading the data"
+                case .finished:
+                    print(completion)
+                }
             } receiveValue: { [weak self] (returnedBug) in
                 self?.bugs = Array(returnedBug.values)
                 self?.bugs.sort(by: <)

@@ -11,6 +11,7 @@ import Combine
 class BugViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var errorLabel: UILabel!
     
     private var vm = BugViewModel()
     var cancellables = Set<AnyCancellable>()
@@ -35,6 +36,12 @@ class BugViewController: UIViewController {
         vm.$bugs
             .handleEvents(receiveOutput: { [weak self] bugs in
                 self?.tableView.reloadData()
+            })
+            .sink { _ in }
+            .store(in: &cancellables)
+        vm.$error
+            .handleEvents(receiveOutput: {[weak self] error in
+                self?.errorLabel.text = error
             })
             .sink { _ in }
             .store(in: &cancellables)

@@ -17,8 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let tabVC = UITabBarController()
-        let fishVC = DetailViewFish(nibName: "DetailViewFish", bundle: nil)
-        //let fishVC = FishViewController(nibName: "FullscreenTable", bundle: nil)
+        //let fishVC = DetailViewFish(nibName: "DetailViewFish", bundle: nil)
+        let fishVC = FishViewController(nibName: "FullscreenTable", bundle: nil)
         let bugVC = BugViewController(nibName: "FullscreenTable", bundle: nil)
         fishVC.tabBarItem = UITabBarItem.init(title: "Fish", image: UIImage(systemName: "fish"), tag: 0)
         bugVC.tabBarItem = UITabBarItem.init(title: "Bugs", image: UIImage(systemName: "ladybug"), tag: 1)

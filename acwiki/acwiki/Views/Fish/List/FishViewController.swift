@@ -10,6 +10,7 @@ import Combine
 
 class FishViewController: UIViewController {
     
+    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     private var vm = FishViewModel()
@@ -17,6 +18,7 @@ class FishViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        errorLabel.text = ""
         titleSetUp()
         tableView.register(UINib(nibName: "ItemCell", bundle: nil), forCellReuseIdentifier: "cell")
         view.backgroundColor = UIColor.white
@@ -35,6 +37,12 @@ class FishViewController: UIViewController {
         vm.$fishes
             .handleEvents(receiveOutput: { [weak self] fishes in
                 self?.tableView.reloadData()
+            })
+            .sink { _ in }
+            .store(in: &cancellables)
+        vm.$error
+            .handleEvents(receiveOutput: {[weak self] error in
+                self?.errorLabel.text = error
             })
             .sink { _ in }
             .store(in: &cancellables)

@@ -11,6 +11,7 @@ import Combine
 
 class FishViewModel: ObservableObject {
     @Published var fishes: [Fish] = []
+    @Published var error:String = ""
     var cancellables = Set<AnyCancellable>()
     init(){
         getFish()
@@ -31,7 +32,12 @@ class FishViewModel: ObservableObject {
             }
             .decode(type: [String:Fish].self, decoder: JSONDecoder())
             .sink { (completion) in
-                print("Completion from Fish: \(completion)")
+                switch completion {
+                case.failure:
+                    self.error = "There was an error loading the data"
+                case .finished:
+                    print(completion)
+                }
             } receiveValue: { [weak self] (returnedFish) in
                 self?.fishes = Array(returnedFish.values)
                 self?.fishes.sort(by: <)
