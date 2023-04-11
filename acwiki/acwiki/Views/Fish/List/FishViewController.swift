@@ -24,6 +24,7 @@ class FishViewController: UIViewController {
         view.backgroundColor = UIColor(named: "ColorCream")
         tableView.backgroundColor = UIColor(named: "ColorCream")
         tableView.dataSource = self
+        tableView.delegate = self
         bind()
     }
     private func titleSetUp() {
@@ -64,7 +65,13 @@ extension FishViewController: UITableViewDataSource {
             cell.itemIcon.asyncLoad(from: URL(string: vm.fishes[indexPath.row].iconURI)!)
             cell.itemDescription.text = String(vm.fishes[indexPath.row].catchPhrase)
         }
-        
         return cell
+    }
+}
+
+extension FishViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailViewFish(nibName: "DetailViewFish", bundle: nil)
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }

@@ -23,98 +23,79 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="NameUSENG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL9-z9-znw">
-                    <rect key="frame" x="10" y="59" width="373" height="26"/>
-                    <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
-                    <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="26"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="00b-Cs-Pa2" customClass="AsyncImage" customModule="acwiki" customModuleProvider="target">
-                    <rect key="frame" x="40" y="95" width="313" height="313"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Villager" translatesAutoresizingMaskIntoConstraints="NO" id="00b-Cs-Pa2">
+                    <rect key="frame" x="40" y="69" width="313" height="313"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="00b-Cs-Pa2" secondAttribute="height" multiplier="1:1" id="hzn-om-zDM"/>
                     </constraints>
                 </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jpg-fg-1yz">
-                    <rect key="frame" x="253" y="427" width="100" height="67"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QHf-BU-jBQ">
-                            <rect key="frame" x="0.0" y="0.0" width="50" height="67"/>
-                            <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bell" translatesAutoresizingMaskIntoConstraints="NO" id="cod-U0-Az5">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="B96-MH-8Db"/>
-                                        <constraint firstAttribute="width" constant="50" id="C84-u6-Ogb"/>
-                                    </constraints>
-                                </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ari-q9-xdX">
-                                    <rect key="frame" x="0.0" y="50" width="50" height="17"/>
-                                    <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gWT-vg-Uwa">
-                            <rect key="frame" x="50" y="0.0" width="50" height="67"/>
-                            <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CJ" translatesAutoresizingMaskIntoConstraints="NO" id="VEq-4R-iad">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="50" id="rTu-Bd-4U8"/>
-                                        <constraint firstAttribute="height" constant="50" id="wEz-z7-JBX"/>
-                                    </constraints>
-                                </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PriceCJ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqZ-ge-xj0">
-                                    <rect key="frame" x="0.0" y="50" width="50" height="17"/>
-                                    <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
-                    </subviews>
-                </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="museum phrase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAu-Q5-BMh">
-                    <rect key="frame" x="68" y="621" width="152" height="17"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="catchphrase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGl-bg-Ufl">
-                    <rect key="frame" x="68" y="563" width="122" height="17"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-PM-RuT">
-                    <rect key="frame" x="41" y="424" width="70" height="70"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Villager" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-PM-RuT">
+                    <rect key="frame" x="40" y="392" width="70" height="70"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="70" id="Q0q-27-C8Q"/>
                         <constraint firstAttribute="height" constant="70" id="gV4-Ox-7Ot"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Blathers" translatesAutoresizingMaskIntoConstraints="NO" id="XIo-iI-OFb">
-                    <rect key="frame" x="10" y="604" width="50" height="50"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bell" translatesAutoresizingMaskIntoConstraints="NO" id="cod-U0-Az5">
+                    <rect key="frame" x="223" y="392" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="B96-MH-8Db"/>
+                        <constraint firstAttribute="width" constant="50" id="C84-u6-Ogb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ari-q9-xdX">
+                    <rect key="frame" x="222.33333333333334" y="445" width="51.333333333333343" height="17"/>
+                    <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CJ" translatesAutoresizingMaskIntoConstraints="NO" id="VEq-4R-iad">
+                    <rect key="frame" x="293" y="392" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="rTu-Bd-4U8"/>
+                        <constraint firstAttribute="height" constant="50" id="wEz-z7-JBX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PriceCJ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqZ-ge-xj0">
+                    <rect key="frame" x="279" y="447" width="78" height="15"/>
+                    <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="catchphrase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGl-bg-Ufl">
+                    <rect key="frame" x="110" y="498.66666666666669" width="122" height="17.000000000000057"/>
+                    <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blathers" translatesAutoresizingMaskIntoConstraints="NO" id="XIo-iI-OFb">
+                    <rect key="frame" x="50" y="542" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="HL9-r0-b6N"/>
                         <constraint firstAttribute="width" constant="50" id="tHp-rU-RBS"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Villager" translatesAutoresizingMaskIntoConstraints="NO" id="gTZ-vp-DkU">
-                    <rect key="frame" x="10" y="546" width="50" height="50"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Villager" translatesAutoresizingMaskIntoConstraints="NO" id="gTZ-vp-DkU">
+                    <rect key="frame" x="50" y="482" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="BZ0-6X-vA6"/>
                         <constraint firstAttribute="width" constant="50" id="tCc-09-zcU"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOw-Gt-RrA">
-                    <rect key="frame" x="268" y="568" width="34" height="70"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOw-Gt-RrA">
+                    <rect key="frame" x="119.99999999999999" y="418.66666666666669" width="33.333333333333329" height="17"/>
+                    <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb7-pa-EQN">
+                    <rect key="frame" x="149" y="738" width="75" height="35"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="museum phrase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAu-Q5-BMh">
+                    <rect key="frame" x="110" y="558.66666666666663" width="152" height="17"/>
                     <fontDescription key="fontDescription" name="ShinGoPro-Bold" family="A-OTF Shin Go Pro" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -123,12 +104,30 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="00b-Cs-Pa2" firstAttribute="top" secondItem="jL9-z9-znw" secondAttribute="bottom" constant="10" id="3Mz-b3-Sga"/>
+                <constraint firstItem="VEq-4R-iad" firstAttribute="top" secondItem="SwZ-PM-RuT" secondAttribute="top" id="1mF-KG-0Of"/>
+                <constraint firstItem="tGl-bg-Ufl" firstAttribute="leading" secondItem="gTZ-vp-DkU" secondAttribute="trailing" constant="10" id="3rf-mx-URI"/>
+                <constraint firstItem="XIo-iI-OFb" firstAttribute="top" secondItem="gTZ-vp-DkU" secondAttribute="bottom" constant="10" id="69p-0R-ovM"/>
+                <constraint firstItem="fqZ-ge-xj0" firstAttribute="bottom" secondItem="SwZ-PM-RuT" secondAttribute="bottom" id="7R2-zy-H3J"/>
+                <constraint firstItem="SwZ-PM-RuT" firstAttribute="top" secondItem="00b-Cs-Pa2" secondAttribute="bottom" constant="10" id="7hE-VL-Sge"/>
+                <constraint firstItem="vAu-Q5-BMh" firstAttribute="leading" secondItem="XIo-iI-OFb" secondAttribute="trailing" constant="10" id="BEb-JX-NTJ"/>
                 <constraint firstItem="00b-Cs-Pa2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="D4N-6e-OpJ"/>
-                <constraint firstItem="jL9-z9-znw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DOw-Nc-hVU"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jL9-z9-znw" secondAttribute="trailing" constant="10" id="Dfk-3R-fXt"/>
-                <constraint firstItem="jL9-z9-znw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="a7C-FY-1Ny"/>
+                <constraint firstItem="sOw-Gt-RrA" firstAttribute="leading" secondItem="SwZ-PM-RuT" secondAttribute="trailing" constant="10" id="Fkj-Rx-g4H"/>
+                <constraint firstItem="SwZ-PM-RuT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="HZI-ly-shs"/>
+                <constraint firstItem="gTZ-vp-DkU" firstAttribute="centerX" secondItem="SwZ-PM-RuT" secondAttribute="centerX" id="Mh2-bT-jFa"/>
+                <constraint firstItem="fqZ-ge-xj0" firstAttribute="centerX" secondItem="VEq-4R-iad" secondAttribute="centerX" id="NiP-Sl-ChV"/>
+                <constraint firstItem="sOw-Gt-RrA" firstAttribute="centerY" secondItem="SwZ-PM-RuT" secondAttribute="centerY" id="REE-oE-T8U"/>
+                <constraint firstItem="XIo-iI-OFb" firstAttribute="centerX" secondItem="gTZ-vp-DkU" secondAttribute="centerX" id="YWm-Dd-Rl6"/>
+                <constraint firstItem="tGl-bg-Ufl" firstAttribute="centerY" secondItem="gTZ-vp-DkU" secondAttribute="centerY" id="dMa-pg-0Wp"/>
+                <constraint firstItem="gTZ-vp-DkU" firstAttribute="top" secondItem="SwZ-PM-RuT" secondAttribute="bottom" constant="20" id="e6j-bb-yvy"/>
+                <constraint firstItem="VEq-4R-iad" firstAttribute="leading" secondItem="cod-U0-Az5" secondAttribute="trailing" constant="20" id="efc-Qa-QYN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="00b-Cs-Pa2" secondAttribute="trailing" constant="40" id="evZ-Cb-2kI"/>
+                <constraint firstItem="cod-U0-Az5" firstAttribute="centerY" secondItem="VEq-4R-iad" secondAttribute="centerY" id="flk-ha-aCO"/>
+                <constraint firstItem="ari-q9-xdX" firstAttribute="centerX" secondItem="cod-U0-Az5" secondAttribute="centerX" id="kHc-1q-oeH"/>
+                <constraint firstItem="fqZ-ge-xj0" firstAttribute="top" secondItem="VEq-4R-iad" secondAttribute="bottom" constant="5" id="mjE-su-Qr7"/>
+                <constraint firstItem="vAu-Q5-BMh" firstAttribute="centerY" secondItem="XIo-iI-OFb" secondAttribute="centerY" id="nuC-aU-Cfj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VEq-4R-iad" secondAttribute="trailing" constant="50" id="rsR-O3-hoP"/>
+                <constraint firstItem="ari-q9-xdX" firstAttribute="bottom" secondItem="SwZ-PM-RuT" secondAttribute="bottom" id="vDN-zb-YG3"/>
+                <constraint firstItem="00b-Cs-Pa2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="xrC-J7-uy1"/>
             </constraints>
             <point key="canvasLocation" x="119.84732824427481" y="19.718309859154932"/>
         </view>
