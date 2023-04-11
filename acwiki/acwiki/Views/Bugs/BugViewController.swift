@@ -20,11 +20,14 @@ class BugViewController: UIViewController {
         super.viewDidLoad()
         titleSetUp()
         tableView.register(UINib(nibName: "ItemCell", bundle: nil), forCellReuseIdentifier: "cell")
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor(named: "ColorCream")
+        tableView.backgroundColor = UIColor(named: "ColorCream")
         tableView.dataSource = self
         bind()
     }
     private func titleSetUp() {
+        navigationController?.navigationBar.backgroundColor = UIColor(named: "ColorCream")
+        navigationController?.navigationBar.barTintColor = UIColor(named: "ColorCream")
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         navigationItem.title = "Animal Crossing Wiki"

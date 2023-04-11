@@ -11,7 +11,6 @@
 		3601F2CE29D1A48400ACFBDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3601F2CD29D1A48400ACFBDE /* SceneDelegate.swift */; };
 		3601F2D529D1A48500ACFBDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3601F2D429D1A48500ACFBDE /* Assets.xcassets */; };
 		3601F2E329D1A98400ACFBDE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3601F2E129D1A98400ACFBDE /* ItemCell.swift */; };
-		3601F2E429D1A98400ACFBDE /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3601F2E229D1A98400ACFBDE /* ItemCell.xib */; };
 		3601F2E929D1AF3400ACFBDE /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3601F2E829D1AF3400ACFBDE /* Fish.swift */; };
 		3601F32729D204A400ACFBDE /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3601F32629D204A400ACFBDE /* AsyncImage.swift */; };
 		3601F32929D20B7D00ACFBDE /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3601F32829D20B7D00ACFBDE /* Bug.swift */; };
@@ -24,6 +23,7 @@
 		368B69B129D48B8700F6BABB /* ShinGo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 368B69B029D48B8700F6BABB /* ShinGo.otf */; };
 		3693D3AD29D4372200E1B2B5 /* BugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693D3AC29D4372200E1B2B5 /* BugViewController.swift */; };
 		3693D3AF29D4374000E1B2B5 /* BugViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3693D3AE29D4374000E1B2B5 /* BugViewModel.swift */; };
+		36E373C929E5295F00B5E98D /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36E373C829E5295F00B5E98D /* ItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,6 @@
 		3601F2D429D1A48500ACFBDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3601F2D929D1A48500ACFBDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3601F2E129D1A98400ACFBDE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		3601F2E229D1A98400ACFBDE /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		3601F2E829D1AF3400ACFBDE /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
 		3601F32629D204A400ACFBDE /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		3601F32829D20B7D00ACFBDE /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		368B69B029D48B8700F6BABB /* ShinGo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShinGo.otf; sourceTree = "<group>"; };
 		3693D3AC29D4372200E1B2B5 /* BugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugViewController.swift; sourceTree = "<group>"; };
 		3693D3AE29D4374000E1B2B5 /* BugViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugViewModel.swift; sourceTree = "<group>"; };
+		36E373C829E5295F00B5E98D /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,6 @@
 				3601F2CD29D1A48400ACFBDE /* SceneDelegate.swift */,
 				3601F2E729D1AF1400ACFBDE /* Models */,
 				3601F32C29D4332E00ACFBDE /* Views */,
-				3601F2E229D1A98400ACFBDE /* ItemCell.xib */,
-				3601F2E129D1A98400ACFBDE /* ItemCell.swift */,
 				3601F32629D204A400ACFBDE /* AsyncImage.swift */,
 				3601F2D429D1A48500ACFBDE /* Assets.xcassets */,
 				3601F2D929D1A48500ACFBDE /* Info.plist */,
@@ -106,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				3674483F29D4348A002AF8FB /* FullscreenTable.xib */,
+				36E373C829E5295F00B5E98D /* ItemCell.xib */,
+				3601F2E129D1A98400ACFBDE /* ItemCell.swift */,
 				3601F33029D433E000ACFBDE /* Bugs */,
 				3601F32D29D4336500ACFBDE /* Fish */,
 			);
@@ -207,7 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3601F2D529D1A48500ACFBDE /* Assets.xcassets in Resources */,
-				3601F2E429D1A98400ACFBDE /* ItemCell.xib in Resources */,
+				36E373C929E5295F00B5E98D /* ItemCell.xib in Resources */,
 				3674484029D4348A002AF8FB /* FullscreenTable.xib in Resources */,
 				368B69AD29D4872300F6BABB /* DetailViewFish.xib in Resources */,
 				368B69B129D48B8700F6BABB /* ShinGo.otf in Resources */,

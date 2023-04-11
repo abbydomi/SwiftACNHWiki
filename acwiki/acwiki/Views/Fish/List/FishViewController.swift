@@ -21,11 +21,14 @@ class FishViewController: UIViewController {
         errorLabel.text = ""
         titleSetUp()
         tableView.register(UINib(nibName: "ItemCell", bundle: nil), forCellReuseIdentifier: "cell")
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor(named: "ColorCream")
+        tableView.backgroundColor = UIColor(named: "ColorCream")
         tableView.dataSource = self
         bind()
     }
     private func titleSetUp() {
+        navigationController?.navigationBar.backgroundColor = UIColor(named: "ColorCream")
+        navigationController?.navigationBar.barTintColor = UIColor(named: "ColorCream")
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         navigationItem.title = "Animal Crossing Wiki"
@@ -57,7 +60,7 @@ extension FishViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         if !vm.fishes.isEmpty{
-            cell.itemLabel.text = String(vm.fishes[indexPath.row].name.nameEUen)
+            cell.itemLabel.text = String(vm.fishes[indexPath.row].name.nameEUen.capitalized)
             cell.itemIcon.asyncLoad(from: URL(string: vm.fishes[indexPath.row].iconURI)!)
             cell.itemDescription.text = String(vm.fishes[indexPath.row].catchPhrase)
         }

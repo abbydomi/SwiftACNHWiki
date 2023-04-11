@@ -25,6 +25,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let controllers = [fishVC, bugVC]
         tabVC.viewControllers = controllers.map{UINavigationController.init(rootViewController: $0)}
         UITabBar.appearance().tintColor = UIColor(named: "ColorMintDark")
+        UITabBar.appearance().backgroundColor = UIColor(named: "ColorCream")
+        UITabBar.appearance().barTintColor = UIColor(named: "ColorCream")
+        UITabBar.appearance().isTranslucent = false
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = tabVC
         
