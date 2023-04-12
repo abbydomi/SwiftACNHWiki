@@ -72,6 +72,12 @@ extension FishViewController: UITableViewDataSource {
 extension FishViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = DetailViewFish(nibName: "DetailViewFish", bundle: nil)
+        detailVC.setName(vm.fishes[indexPath.row].name.nameEUen.capitalized)
+        detailVC.setID("#\(vm.fishes[indexPath.row].id)")
+        detailVC.setPhrases(player: vm.fishes[indexPath.row].catchPhrase, museum: vm.fishes[indexPath.row].museumPhrase)
+        detailVC.setItemImagesURL(imageurl: vm.fishes[indexPath.row].imageURI, iconurl: vm.fishes[indexPath.row].iconURI)
+        detailVC.setPrices(price: "\(vm.fishes[indexPath.row].price)", altPrice: "\(vm.fishes[indexPath.row].priceCj)")
+        
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
